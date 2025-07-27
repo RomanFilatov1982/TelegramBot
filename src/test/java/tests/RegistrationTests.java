@@ -15,7 +15,7 @@ public class RegistrationTests extends TestBase {
 
     @Test
     @Tag("web")
-    @Story("Успешное заполнение формы регистрации")
+    @Story("successful completion of the registration form")
     @Owner("filatovri")
     @Link(value = "Practice Form", url = "https://demoqa.com/automation-practice-form")
     @DisplayName("Student Registration Form")
