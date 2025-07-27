@@ -23,7 +23,7 @@ public class TestBase {
         Configuration.timeout = 10000;
         //Configuration.holdBrowserOpen = true;
         Configuration.remote = System.getProperty("remoteUrl");
-        //срфтпувConfiguration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        //Configuration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
