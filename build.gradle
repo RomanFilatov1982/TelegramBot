@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id 'io.qameta.allure' version '2.11.2'
+    id 'io.qameta.allure' version '2.11.2' //Плагин io.qameta.allure нужен для генерации отчётов о тестировании в формате Allure Report, совместимых с JUnit/TestNG/Selenide и т. д.
 }
 
 repositories {
@@ -11,14 +11,14 @@ def allureVersion = "2.21.0",
     selenideVersion = "6.19.1"
 
 allure {
-    report {
+    report { //отвечает за появлении папочки build/allure-results
         version.set(allureVersion)
     }
     adapter {
         aspectjWeaver.set(true)
         frameworks {
-            junit5 {
-                adapterVersion.set(allureVersion)
+            junit5 { //название фреймворка
+                adapterVersion.set(allureVersion) //версия интеграции фреймворка и аллюр
             }
         }
     }

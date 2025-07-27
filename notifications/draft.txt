@@ -1,7 +1,8 @@
-8453938453933499:AAEkkNx1LHCMfk4x5bPWUfQdbIzEwXJdqHg
-https:https://api.telegram.org/bot8453938453933499:AAEkkNx1LHCMfk4x5bPWUfQdbIzEwXJdqHg/getUpdates
--1002813225251
+8468626030:AAHkk_hNMsDfvuxCskrtqXZT73fjcuaRG-U
+https://api.telegram.org/bot8468626030:AAHkk_hNMsDfvuxCskrtqXZT73fjcuaRG-U/getUpdates
+-4673109981
 
-curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1002813225251", "text": "This is a test from qa.guru", "disable_notification": true}' https://api.telegram.org/bot8453933499:AAEkkNx1LHCMfk4x5bPWUfQdbIzEwXJdqHg/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-4673109981", "text": "This is a test from qa.guru", "disable_notification": true}' https://api.telegram.org/bot8468626030:AAHkk_hNMsDfvuxCskrtqXZT73fjcuaRG-U/sendMessage
 
 java "-DconfigFile=notifications/config.json" -jar ./notifications/allure-notifications-4.9.0.jar
+

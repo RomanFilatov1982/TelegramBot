@@ -32,7 +32,7 @@ public class TestBase {
         ));
         Configuration.browserCapabilities = capabilities;
 
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()); //нужна для интеграции Selenide с Allure — чтобы шаги браузера автоматически попадали в Allure-отчёт.
     }
 
     @AfterEach

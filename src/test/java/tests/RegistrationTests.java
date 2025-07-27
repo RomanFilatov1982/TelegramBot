@@ -79,4 +79,11 @@ public class RegistrationTests extends TestBase {
                     text("img.png"), text("Proxladnaya street 28"), text("Haryana Karnal"));
         });
     }
+
+        /*@Test
+        void successfulSearchTest() {
+            open("https://ya.ru");
+            $("[id=text]").setValue("selenide").pressEnter();
+            $("[id=search-result]").shouldHave(text("selenide.org"));
+        }*/
 }
