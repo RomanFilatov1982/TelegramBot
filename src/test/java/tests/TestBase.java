@@ -18,11 +18,12 @@ public class TestBase {
     static void beforeAll() {
         Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com/");
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "138.0");
+        Configuration.browserVersion = System.getProperty("browserVersion", "128.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.timeout = 10000;
         //Configuration.holdBrowserOpen = true;
         Configuration.remote = System.getProperty("remoteUrl");
-        //Configuration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        //срфтпувConfiguration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
